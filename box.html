@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+      /* block level element: 화면 전체를 쓰는 태그 */
+      /* h1 {
+        border-width: 5px;
+        border-color: red;
+        border-style: solid;
+        display: inline;
+        block level element를 inline eleement처럼 표시함.
+        즉, block level element와 inline element는 display 속성의 기본값일 뿐이고 언제든 바꿀 수 있다.
+        display: none;으로 하면 화면에서 해당 태그들이 안보이게 된다.
+      } */
+      /* inline element: 자기 자신의 부피, 콘텐츠 크기만큼을 갖는 태그 */
+      /* a {
+        border-width: 5px;
+        border-color: red;
+        border-style: solid;
+        display: block;
+        inline eleement를 block level element처럼 표시함.
+      } */
+      /* h1,
+      a {
+        border-width: 5px;
+        border-color: red;
+        border-style: solid;
+      } */
+      /* 쉼표를 이용해 중복 제거 가능. */
+      h1,
+      a {
+        border: 5px solid red;
+        padding: 20px;
+        /* padding: 안쪽 여백 */
+        margin: 20px;
+        /* margin: 바깥 여백 */
+        display: block;
+        width: 100px;
+        /* width: element의 가로 길이 */
+        height: 50px;
+        /* height: element의 세로 길이 */
+        /* 웹페이지 > 마우스 우클릭 > 검사를 통해 개발자 도구 이용하면 어느 부분인지 확인 가능. */
+      }
+      /* border 값들 코드 요약(중복 제거) 가능. 순서는 중요하지 않음. */
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS</h1>
+    <h1>CSS</h1>
+    <!-- Cascading Style Sheets (<a href="https://en.wikipedia.org/wiki/CSS">CSS</a>)
+    is a style sheet language used for describing the presentation of a document
+    written in a markup language such as HTML or XML (including XML dialects
+    such as SVG, MathML or XHTML). CSS is a cornerstone technology of the World
+    Wide Web, alongside HTML and JavaScript. CSS is designed to enable the
+    separation of presentation and content, including layout, colors, and fonts.
+    This separation can improve content accessibility; provide more flexibility
+    and control in the specification of presentation characteristics; enable
+    multiple web pages to share formatting by specifying the relevant CSS in a
+    separate .css file, which reduces complexity and repetition in the
+    structural content; and enable the .css file to be cached to improve the
+    page load speed between the pages that share the file and its formatting. -->
+  </body>
+</html>

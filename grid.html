@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      #grid {
+        border: 5px solid pink;
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        /* 하나의 줄에 다 표현하고 싶을 때, 첫 번째 block은 150px이고 두 번째 block은 나머지 공간. 
+        만약 1fr 1fr이라고 하면 1:1 비율로 나눠지게 된다. 2fr 1fr로 하면 2:1 비율.
+        fr: 화면 전체를 쓰게 자동으로 조정되는 단위*/
+        /* caniuse.com
+        여러 css나 html 또는 javascript의 기술들 중에서 현재 웹브라우저들이 얼마나 그 기술을 채택하고 있는지에 대한 통계를 보여주는 사이트 */
+      }
+      div {
+        border: 5px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid">
+      <div>NAVIGATION</div>
+      <div>ARTICLE</div>
+      <!-- div: 무색무취의 태그, 아무 의미 없는 그저 디자인 용도로만 사용하는 태그, 
+    기본적으로 block level element이다. -->
+      <!-- span: div와 마찬가지로 무색무취의 태그, div와 달리 inline element이다. -->
+    </div>
+  </body>
+</html>

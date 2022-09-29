@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEB1 - HTML</title>
+    <!-- title: 웹페이지의 제목 지정(책 표지) -->
+
+    <meta charset="utf-8" />
+    <!-- 웹브라우저가 utf-8로 열리도록 함.
+  charset = character(글자) + set(규칙) -->
+  </head>
+  <!-- head: 본문 설명 -->
+
+  <body>
+    <h1><a href="index.html">WEB</a></h1>
+    <!-- <ul>
+    <li>1. HTML</li>
+    <li>2. CSS</li>
+    <li>3. JavaScript</li>
+  </ul> -->
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <!-- 어디서부터 어디까지가 서로 연관된 항목인지를 경계를 짓기 위한,
+  그룹핑을 하기 위한 부모 태그가 필요함.
+  즉, <li> 태그는 반드시 부모 태그를 갖고 있고,
+  <ul>태그는 반드시 자식 태그를 갖고 있다. -->
+    <!-- ol = Ordered List, ul = Unordered List-->
+    <h2>HTML</h2>
+    <p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/7T7r_oSp0SE"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </p>
+    <p>
+      <a
+        href="https://www.w3.org/TR/2011/WD-html5-20110405/"
+        target="_blink"
+        title="html specification"
+      >
+        Hypertext Markup Language (HTML)
+      </a>
+      <!-- a(anchor): 링크
+      href: 참고 url, target="_blink": 새창에서 띄움, title: 마우스 커서 올려두면 보일 항목 -->
+
+      is the standard markup language for
+      <strong>creating <u>web</u> pages</strong> and web applications. Web
+      browsers receive HTML documents from a web server or from local storage
+      and render them into multimedia web pages. HTML describes the structure of
+      a web page semantically and originally included cues for the appearance of
+      the document.
+      <img src="coding.jpg" width="100%" />
+      <!-- 속성 attribute: 위치 상관 X, 
+    태그가 태그의 이름만으로는 정보가 부족할 때는 
+    속성을 통해서 더 많은 의미를 부가할 수 있게 됐다. -->
+    </p>
+    <p style="margin-top: 45px">
+      HTML elements are the building blocks of HTML pages. With HTML constructs,
+      images and other objects, such as interactive forms, may be embedded into
+      the rendered page. It provides a means to create structured documents by
+      denoting structural semantics for text such as headings, paragraphs,
+      lists, links, quotes and other items. HTML elements are delineated by
+      tags, written using angle brackets.
+    </p>
+    <p>
+      <div id="disqus_thread"></div>
+      <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://web1-55i1hl6pax.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>
+        Please enable JavaScript to view the 
+        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.
+
+        </a>
+      </noscript>
+    </p>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/633507d954f06e12d897708a/1ge3idat7';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+  <!--End of Tawk.to Script-->
+  </body>
+  <!-- body: 본문 -->
+</html>
+
+<!-- 태그 : 열리는 태그 + 닫히는 태그 -->
+
+<!-- <h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6> -->
+
+<!-- <br> 줄바꿈 태그
+<p> </p> 단락 태그
+시각적인 부분은 css를 통해서 훨씬 더 정교하게 제어할 수 있기 때문에
+어디부터 어디까지가 단락이다는 정보를 표현해 주는 것이 더 좋은 코드이다.
+의미에 맞는 태그를 사용하자!!-->
+
+<!-- web을 만들면서 화려하게 만들고 싶고,
+뭔가 더 편리하게 만들고 싶고,
+여러가지 욕심들이 생기겠지만,
+그런 것들보다 어쩌면 훨씬 더 중요한 것은
+바로 이 web이 갖고 있는 본래의 의미,
+정보라는 것을 탄탄히 하는 것이 훨씬 더 중요한 이슈이다. -->
+
+<!-- HTML을 의미에 맞게 정확하게 사용한다는 것은
+비지니스적인 측면에서 정말 생명줄과 같이 중요한 문제이다. -->
+
+<!-- Accessibility 접근성 -->
+
+<!-- 태그가 서로 포함 관계로 연관되어 있을 때
+<parent> 부모 태그
+  <child></child> 자식 태그
+</parent> -->
+
+<!-- http://127.0.0.1:8887/index.html -->
+<!-- http - Hyper Text Transfer Protocol
+  : 웹 페이지 전송 프로토콜(통신 규칙), 웹 페이지를 전송하기 위해서 고안된 통신 규칙 -->
+<!-- 127.0.0.1 - Internet Protocol Adress
+  : IP 주소, 컴퓨터와 컴퓨터가 서로 통신을 할 때 사용하는 주소 체계
+  127.0.0.1이라는 주소는 자기 자신의 컴퓨터를 가리키는 주소이다. -->
+<!-- 8887 - Port -->
