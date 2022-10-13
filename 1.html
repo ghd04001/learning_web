@@ -7,6 +7,32 @@
     <meta charset="utf-8" />
     <!-- 웹브라우저가 utf-8로 열리도록 함.
   charset = character(글자) + set(규칙) -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- link 태그: 이 페이지가 어떤 css 파일과 연결되어 있는지를 웹브라우저에게 알려줄 수 있다. -->
+    <!-- 중복 제거해서 재사용성을 높이고, 가독성을 높이고, 유지보수를 편리하게 해 줌. -->
+    <!-- 네트워크 측면에서는 파일을 하나 더 다운받아야 해서 css 파일을 직접 타이핑해놓는 것보다 트래픽이 더 높아지만, 
+    캐싱을 통해서 다음에 style.css가 필요할 때에는 우리의 컴퓨터에서 가져다 쓰기 때문에 속도를 높일 수 있음.
+    결국 훨씬 더 빠르게 웹페이지를 보여줄 수 있으면서 네트워크 트래픽, 다시 말해 사용료를 훨씬 더 적게 낼 수 있게 됨.-->
+    
+    <!-- Google tag (gtag.js) -->
+    <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-67M7W7QLQH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-67M7W7QLQH");
+    </script>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+    <script src="colors.js"></script>
   </head>
   <!-- head: 본문 설명 -->
 
@@ -16,59 +42,71 @@
     <li>1. HTML</li>
     <li>2. CSS</li>
     <li>3. JavaScript</li>
-  </ul> -->
-    <ol>
-      <li><a href="1.html">HTML</a></li>
-      <li><a href="2.html">CSS</a></li>
-      <li><a href="3.html">JavaScript</a></li>
-    </ol>
-    <!-- 어디서부터 어디까지가 서로 연관된 항목인지를 경계를 짓기 위한,
-  그룹핑을 하기 위한 부모 태그가 필요함.
-  즉, <li> 태그는 반드시 부모 태그를 갖고 있고,
-  <ul>태그는 반드시 자식 태그를 갖고 있다. -->
-    <!-- ol = Ordered List, ul = Unordered List-->
-    <h2>HTML</h2>
-    <p>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/7T7r_oSp0SE"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </p>
-    <p>
-      <a
-        href="https://www.w3.org/TR/2011/WD-html5-20110405/"
-        target="_blink"
-        title="html specification"
-      >
-        Hypertext Markup Language (HTML)
-      </a>
-      <!-- a(anchor): 링크
-      href: 참고 url, target="_blink": 새창에서 띄움, title: 마우스 커서 올려두면 보일 항목 -->
+    </ul> -->
+    <input
+      id="night_day"
+      type="button"
+      value="night"
+      onclick="
+        nightDayHandler(this);
+      "
+    />
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+      </ol>
+      <!-- 어디서부터 어디까지가 서로 연관된 항목인지를 경계를 짓기 위한,
+    그룹핑을 하기 위한 부모 태그가 필요함.
+    즉, <li> 태그는 반드시 부모 태그를 갖고 있고,
+    <ul>태그는 반드시 자식 태그를 갖고 있다. -->
+      <!-- ol = Ordered List, ul = Unordered List-->
+      <div id="article">
+        <h2>HTML</h2>
+        <p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/7T7r_oSp0SE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </p>
+        <p>
+          <a
+            href="https://www.w3.org/TR/2011/WD-html5-20110405/"
+            target="_blink"
+            title="html specification"
+          >
+            Hypertext Markup Language (HTML)
+          </a>
+          <!-- a(anchor): 링크
+          href: 참고 url, target="_blink": 새창에서 띄움, title: 마우스 커서 올려두면 보일 항목 -->
 
-      is the standard markup language for
-      <strong>creating <u>web</u> pages</strong> and web applications. Web
-      browsers receive HTML documents from a web server or from local storage
-      and render them into multimedia web pages. HTML describes the structure of
-      a web page semantically and originally included cues for the appearance of
-      the document.
-      <img src="coding.jpg" width="100%" />
-      <!-- 속성 attribute: 위치 상관 X, 
-    태그가 태그의 이름만으로는 정보가 부족할 때는 
-    속성을 통해서 더 많은 의미를 부가할 수 있게 됐다. -->
-    </p>
-    <p style="margin-top: 45px">
-      HTML elements are the building blocks of HTML pages. With HTML constructs,
-      images and other objects, such as interactive forms, may be embedded into
-      the rendered page. It provides a means to create structured documents by
-      denoting structural semantics for text such as headings, paragraphs,
-      lists, links, quotes and other items. HTML elements are delineated by
-      tags, written using angle brackets.
-    </p>
+          is the standard markup language for
+          <strong>creating <u>web</u> pages</strong> and web applications. Web
+          browsers receive HTML documents from a web server or from local storage
+          and render them into multimedia web pages. HTML describes the structure of
+          a web page semantically and originally included cues for the appearance of
+          the document.
+          <img src="coding.jpg" width="95%" />
+          <!-- 속성 attribute: 위치 상관 X, 
+        태그가 태그의 이름만으로는 정보가 부족할 때는 
+        속성을 통해서 더 많은 의미를 부가할 수 있게 됐다. -->
+        </p>
+        <p style="margin-top: 45px">
+          HTML elements are the building blocks of HTML pages. With HTML constructs,
+          images and other objects, such as interactive forms, may be embedded into
+          the rendered page. It provides a means to create structured documents by
+          denoting structural semantics for text such as headings, paragraphs,
+          lists, links, quotes and other items. HTML elements are delineated by
+          tags, written using angle brackets.
+        </p>
+      </div>
+    </div>
     <p>
       <div id="disqus_thread"></div>
       <script>
@@ -95,6 +133,7 @@
         </a>
       </noscript>
     </p>
+
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
       var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -107,7 +146,7 @@
         s0.parentNode.insertBefore(s1,s0);
       })();
     </script>
-  <!--End of Tawk.to Script-->
+    <!--End of Tawk.to Script-->
   </body>
   <!-- body: 본문 -->
 </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <h1>Function</h1>
+
+    <h2>Basic</h2>
+    <ul>
+      <script>
+        function two() {
+          document.write("<li>2-1</li>");
+          document.write("<li>2-2</li>");
+        }
+        document.write("<li>1</li>");
+        two();
+        document.write("<li>3</li>");
+        two();
+        // 함수의 정의 첫번째 방법
+        // function 함수명(매개변수){실행 코드};
+      </script>
+    </ul>
+
+    <h2>Parameter & Argument</h2>
+    <script>
+      function onePlusOne() {
+        document.write(1 + 1 + "<br>");
+      }
+      onePlusOne();
+      function sum(left, right) {
+        document.write(left + right + "<br>");
+      }
+      function sumColorRed(left, right) {
+        document.write("<div style='color:red'>" + left + right + "</div><br>");
+      }
+      sum(2, 3); // 5
+      sumColorRed(2, 3);
+      sum(3, 4); // 7
+      // 2, 3 - 인자, Argument
+      // left, right - 매개변수, parameter
+    </script>
+
+    <h2>Return</h2>
+    <!-- 표현식, expression
+    1+1은 숫자 2에 대한 표현식이다.
+    2-1은 숫자 1에 대한 표현식이다.
+    1===1은 true라는 값에 대한 표현식이다. -->
+    <script>
+      var sum2 = function (left, right) {
+        return left + right;
+      };
+      // 함수의 정의 2번째 방법
+      // var 함수명 = function(매개변수){실행코드};
+      document.write(sum2(2, 3) + "<br>");
+      document.write("<div style='color:red'>" + sum2(2, 3) + "</div>");
+      document.write("<div style='font-size:3rem'>" + sum2(2, 3) + "</div>");
+    </script>
+  </body>
+</html>
